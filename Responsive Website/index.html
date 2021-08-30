@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="menu" id="menu">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="sidebar">
+        <!-- logo  -->
+        <div class="logo_content">
+            <div class="logo">
+                <i class="far fa-circle" id="btn"></i>
+                <div class="logo_name">Vuexy</div>
+                <i class="fas fa-times" id="close_menu"></i>
+            </div>
+            <a href="#">
+                <i class="fas fa-home"></i>
+                <span> Dashboard</span>
+            </a>
+        </div>
+        <br>
+        <ul class="nav_list">
+            <p id="text_change">. . .</p>
+            <li>
+                <a href="#">
+                    <i class="far fa-envelope"></i>
+                    <span class="links_name">Email</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="far fa-comment-alt"></i>
+                    <span class="links_name">Chat</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="far fa-check-square"></i>
+                    <span class="links_name">Todo</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="far fa-calendar-minus"></i>
+                    <span class="links_name">Calander</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="far fa-file-alt"></i>
+                    <span class="links_name">Invoice</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="links_name">eCommerce</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="far fa-user"></i>
+                    <span class="links_name">User</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="far fa-file"></i>
+                    <span class="links_name">Pages</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="right_div">
+        <div class="top_nav">
+            <div class="dropdown">
+                <div>
+                    <i class="fas fa-chevron-down" id="dropdown"></i>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-calendar-minus"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-comment-alt"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-check-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-star"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="left_top_nav">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-calendar-minus"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-comment-alt"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-check-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-star"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right_top_nav">
+                <div class="country">
+                    <img src="img/Flag_of_the_United_States.svg" alt="">
+                    <span>English</span>
+                </div>
+                <div class="icon_grp">
+                    <i class="far fa-sun"></i>
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                    <i class="far fa-bell"></i>
+                </div>
+                <div class="logo_content2">
+                    <div>
+                        <span>Jhon Doe</span>
+                        <p>admin</p>
+                    </div>
+                    <img src="img/user-circle-1179465.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="table_section">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Index</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Popularity</th>
+                        <th scope="col">Order Status</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Index">1</td>
+                        <td data-label="Name">Fitbat- Activity Tracker</td>
+                        <td data-label="Category">Fitness</td>
+                        <td data-label="Popularity">
+                            <div>
+                                <div></div>
+                            </div>
+                        </td>
+                        <td data-label="Order Status">
+                            <div>Delivered</div>
+                        </td>
+                        <td data-label="Price">$87.6</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Index">2</td>
+                        <td data-label="Name">Fitbat- Activity Tracker</td>
+                        <td data-label="Category">Fitness</td>
+                        <td data-label="Popularity">
+                            <div>
+                                <div></div>
+                            </div>
+                        </td>
+                        <td data-label="Order Status">
+                            <div>Pending</div>
+                        </td>
+                        <td data-label="Price">$100.5</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Index">3</td>
+                        <td data-label="Name">Fitbat-Wireless Activity </td>
+                        <td data-label="Category">Fitness</td>
+                        <td data-label="Popularity">
+                            <div>
+                                <div></div>
+                            </div>
+                        </td>
+                        <td data-label="Order Status">
+                            <div>Delivered</div>
+                        </td>
+                        <td data-label="Price">$67.77</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Index">4</td>
+                        <td data-label="name">Fitbat- Sleep Wristband</td>
+                        <td data-label="Category">Fitness</td>
+                        <td data-label="Popularity">
+                            <div>
+                                <div></div>
+                            </div>
+                        </td>
+                        <td data-label="Order Status">
+                            <div>On Hold</div>
+                        </td>
+                        <td data-label="Price">$107</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Index">5</td>
+                        <td data-label="name">Fitbat- Sleep Wristband</td>
+                        <td data-label="Category">Fitness</td>
+                        <td data-label="Popularity">
+                            <div>
+                                <div></div>
+                            </div>
+                        </td>
+                        <td data-label="Order Status">
+                            <div>On Hold</div>
+                        </td>
+                        <td data-label="Price">$107</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Index">6</td>
+                        <td data-label="name">Fitbat- Sleep Wristband</td>
+                        <td data-label="Category">Fitness</td>
+                        <td data-label="Popularity">
+                            <div>
+                                <div></div>
+                            </div>
+                        </td>
+                        <td data-label="Order Status">
+                            <div>Delivered</div>
+                        </td>
+                        <td data-label="Price">$107</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Index">7</td>
+                        <td data-label="name">Fitbat- Sleep Wristband</td>
+                        <td data-label="Category">Fitness</td>
+                        <td data-label="Popularity">
+                            <div>
+                                <div></div>
+                            </div>
+                        </td>
+                        <td data-label="Order Status">
+                            <div>On Hold</div>
+                        </td>
+                        <td data-label="Price">$107</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table_section">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Row ID</th>
+                        <th scope="col">Avatar</th>
+                        <th scope="col">Full Name</th>
+                        <th scope="col">post</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">city</th>
+                        <th scope="col">Start date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Row ID">1</td>
+                        <td data-label="Avatar"><img src="img/user-circle-1179465.png" height="30px" width="30px" alt=""></td>
+                        <td data-label="Full Name">Korrie O'Cery</td>
+                        <td data-label="Post">Nuclear Power Engineer</td>
+                        <td data-label="Email">kocery0@gmail.com</td>
+                        <td data-label="City">Kranosilka</td>
+                        <td data-label="Start Date">10.09.2020</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Row ID">1</td>
+                        <td data-label="Avatar"><img src="img/user-circle-1179465.png" height="30px" width="30px" alt=""></td>
+                        <td data-label="Full Name">Korrie O'Cery</td>
+                        <td data-label="Post">Nuclear Power Engineer</td>
+                        <td data-label="Email">kocery0@gmail.com</td>
+                        <td data-label="City">Kranosilka</td>
+                        <td data-label="Start Date">10.09.2020</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Row ID">1</td>
+                        <td data-label="Avatar"><img src="img/user-circle-1179465.png" height="30px" width="30px" alt=""></td>
+                        <td data-label="Full Name">Korrie O'Cery</td>
+                        <td data-label="Post">Nuclear Power Engineer</td>
+                        <td data-label="Email">kocery0@gmail.com</td>
+                        <td data-label="City">Kranosilka</td>
+                        <td data-label="Start Date">10.09.2020</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Row ID">1</td>
+                        <td data-label="Avatar"><img src="img/user-circle-1179465.png" height="30px" width="30px" alt=""></td>
+                        <td data-label="Full Name">Korrie O'Cery</td>
+                        <td data-label="Post">Nuclear Power Engineer</td>
+                        <td data-label="Email">kocery0@gmail.com</td>
+                        <td data-label="City">Kranosilka</td>
+                        <td data-label="Start Date">10.09.2020</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Row ID">1</td>
+                        <td data-label="Avatar"><img src="img/user-circle-1179465.png" height="30px" width="30px" alt=""></td>
+                        <td data-label="Full Name">Korrie O'Cery</td>
+                        <td data-label="Post">Nuclear Power Engineer</td>
+                        <td data-label="Email">kocery0@gmail.com</td>
+                        <td data-label="City">Kranosilka</td>
+                        <td data-label="Start Date">10.09.2020</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Row ID">1</td>
+                        <td data-label="Avatar"><img src="img/user-circle-1179465.png" height="30px" width="30px" alt=""></td>
+                        <td data-label="Full Name">Korrie O'Cery</td>
+                        <td data-label="Post">Nuclear Power Engineer</td>
+                        <td data-label="Email">kocery0@gmail.com</td>
+                        <td data-label="City">Kranosilka</td>
+                        <td data-label="Start Date">10.09.2020</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="settings">
+            <i class="fas fa-cog"></i>
+        </div>
+        <div class="button_grp">
+            <button>
+                Buy now
+            </button>
+            <div><i class="fas fa-arrow-up"></i></div>
+        </div>
+    </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        btn.onclick = function() {
+            document.querySelector(".sidebar").classList.toggle("active");
+            if (document.querySelector("#text_change").innerHTML === ". . .") {
+                document.querySelector("#text_change").innerHTML = "Apps & Pages";
+            } else {
+                document.querySelector("#text_change").innerHTML = ". . .";
+            }
+        }
+
+        let close_menu = document.querySelector("#close_menu");
+        close_menu.onclick = function() {
+            document.querySelector(".sidebar").classList.toggle("active");
+            if (document.querySelector("#text_change").innerHTML === ". . .") {
+                document.querySelector("#text_change").innerHTML = "Apps & Pages";
+            } else {
+                document.querySelector("#text_change").innerHTML = ". . .";
+            }
+        }
+
+        let open_menu = document.querySelector("#menu");
+        open_menu.onclick = function() {
+            document.querySelector(".sidebar").classList.toggle("active");
+            if (document.querySelector("#text_change").innerHTML === ". . .") {
+                document.querySelector("#text_change").innerHTML = "Apps & Pages";
+            } else {
+                document.querySelector("#text_change").innerHTML = ". . .";
+            }
+        }
+    </script>
+</body>
+
+</html>
